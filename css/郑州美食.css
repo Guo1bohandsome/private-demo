@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	padding:0;
+	margin:0;
+}
+.logo1{
+	position:relative;
+	left:0px;
+	top:0px;
+}
+ .wrap{ width:100%; height:1302px; 
+        margin:0 auto; 
+		/*background-image:url(../images/second.jpg);*/ 
+		border:0;
+		 }
+ 
+ .header{ width:100%; height:70px; 
+          float:left;
+		  box-shadow:0px 1px 20px 2px;
+		  }
+          
+.logo{ width:150px; height:39px; 
+       font-family:"香蕉牛奶"; 
+	   font-weight:bold; 
+	   font-size:38px; 
+	   text-align:left; 
+	   float:left; margin-right:50px;
+	     }
+
+     .menu-top{ width:1250px; height:480px; 
+	         font-family:"微软雅黑", "宋体", "楷体", "黑体"; 
+			 text-align:center; 
+			 margin:0 auto; 
+			 float:inherit right;
+	       }
+	  
+	  .menu ul{background-color:#FFF; 
+	           width:1250px; height:auto; 
+			   position:relative; 
+			   list-style:none;
+			       }
+      
+	  .menu ul li{  width:250px; height:40px; 
+	                line-height:60px; 
+					text-align:center; 
+					position:relative; float:left;
+					font-family:"宋体", "楷体", "黑体";
+	                font-size:26px; 				 
+					            }
+      
+	  .menu li a:link{ background-color:rgba(0,0,0,0);/*导航栏背景颜色*/
+	                   color:#000; 
+					   display:block; 
+					   width:250px; height:70px; 
+					   text-decoration:none;
+					   border-bottom:#FC3;
+					                     }
+     
+	  .menu li a:hover{text-decoration:none;	              
+	                   color:#FC3;
+					   border-bottom: 3px solid #Fc3;
+	                   /*鼠标俘动到盒子时，夫盒子与子盒子的背景颜色*/
+	                   /*鼠标放到盒子上面时，子列表字体颜色*/
+					               }
+      .menu li ul {width:250px; 
+	              position:absolute; left:0px; top:40px;   
+				  display:none; 
+				                      }
+     
+	 .menu li:hover ul{ display:block;
+	                     position:relative; left:0px; top:0px;
+						 color:#FC0; 
+}
+.login{position:absolute;
+left:900px;
+top:20px;
+}
+.表单{position:absolute;
+left:1600px;
+top:30px;
+}
+body{background:url(images/美食背景1.jpg);
+	     background-repeat:repeat;
+		 }
+p{text-indent: 2em; font:normal 30px "仿宋"; color:rgba(46,4,5,1.00);}
+.hg{width: 600px; height:450px;
+ background:url(images/美食1.jpg);
+ position:absolute;
+ top:110px;
+ left:90px; 
+background-size: cover;
+}
+#ms1{width:830px; height: 450px; position:absolute; right: 60px; top:130px; }
+.szy{width: 600px; height: 450px; background:url("images/美食2.jpg");
+background-size:cover;
+position:absolute;
+top:660px;
+left:90px;
+}
+#ms2{width:830px; height: 450px; position:absolute; right: 60px; top:700px;}
+.zc{width: 600px; height:450px; background:url("images/美食3.jpg");
+position:absolute;
+top:1200px;
+left:90px;
+background-size: cover;} 
+#ms3{width:830px; height: 450px; position:absolute; right:60px; top:1250px;}

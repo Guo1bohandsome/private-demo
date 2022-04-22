@@ -1,0 +1,313 @@
+<html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <title>美食栏目</title>
+     <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet"> -->
+	     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	     
+	     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css">
+	     
+	  <link rel="stylesheet" href="https://themes.audemedia.com/html/goodgrowth/css/owl.theme.default.min.css">
+     <style>
+     
+     body{
+               font-family: tahoma;
+           }
+        
+        
+        
+           .shadow-effect{
+               background: white;
+               padding: 20px;
+               border-radius: 4px;
+               text-align: center;
+               border: 1px solid #ececec;
+               box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.2);
+		
+           }
+        
+        
+           #customers-testimonials .shadow-effect p{
+               font-family: inherit;
+               font-size: 17px;
+               line-height: 1.5;
+               margin: 0 0 17px 0;
+               font-weight: 300;
+           }
+        
+        
+           .testimonial-name{
+               margin: -17px auto 0;
+               display: table;
+               width: auto;
+               background: #fc2a93;
+               padding: 9px 25px;
+               text-align: center;
+               color: white;
+               box-shadow: 0 9px 18px rgba(0,0,0,0.12), 0 5px 7px rgba(0,0,0,0.05);
+           }
+        
+           #customers-testimonials .item{
+               text-align: center;
+               caption-side: 50px;
+               margin-bottom: 80px;
+               opacity: 0.2;
+               transform: scale3d(0.8, 0.8, 1);
+               transition: all 0.3s ease-in-out;
+           }
+           
+           
+           
+           
+           #customers-testimonials .owl-item.active.center .item{
+               opacity: 1;
+               transform: scale3d(1.0, 1.0, 1);
+           }
+        
+           
+           
+           .owl-carousel .owl-item img{
+               transform-style: preserve-3d;
+               max-width: 90px;
+               margin: 0 auto 17px;
+           }
+           
+           
+           
+           #customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
+           #customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span{
+               background: #fa2992;
+               transform: translate3d(0px, -50%, 0px) scale(0.7);
+           }
+           
+           
+           #customers-testimonials.owl-carousel .owl-dots{
+              display: inline-block;
+               width: 100%;
+               text-align: center;
+           }
+           
+           
+           #customers-testimonials.owl-carousel .owl-dots .owl-dot{
+               display: inline-block;
+           }
+           
+           
+           #customers-testimonials.owl-carousel .owl-dots .owl-dot span{
+               background: hotpink;
+               display: inline-block;
+               height: 20px;
+               margin: 0 2px 5px;
+               transform: translate3d(0px, -50%, 0) scale(0.3);
+               transform-origin: 50% 50% 0;
+               transition: all 250ms ease-out 0s;
+               width: 20px;
+           }  
+ * {
+	 box-sizing: border-box;
+}
+ .body {
+	 text-align: center;
+	 display: flex;
+	 height:58px;
+	 width: 421%;
+	 justify-content: center;
+	 align-items: center;
+	 padding: 10 32px;
+	 background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/debut_light.png");
+}
+ .nav {
+	 display: inline-flex;
+	 position: relative;
+	 left:390px;
+	 hight:20px;
+	 overflow: hidden;
+	 max-width: 100%;
+	 background-color: #fff;
+	 padding: 0 20px;
+	 border-radius: 40px;
+	 box-shadow: 0 10px 40px rgba(159, 162, 177, .8);
+}
+ .nav-item {
+	 left:0px;
+	 color: #83818c;
+	 padding: 16px;
+	 text-decoration: none;
+	 transition: 0.3s;
+	 margin: 0 20px;
+	 z-index:6;
+	 font-family: 'Roboto Condensed', sans-serif;
+	 font-weight: 450;
+	 position: relative;
+}
+ .nav-item:before {
+	 content: "";
+	 position: relative;
+	 bottom: 28px;
+	 left: 900px;
+	 width: 30%;
+	 height: 50px;
+	 background-color: #dfe2ea;
+	 border-radius: 8px 8px 0 0;
+	 opacity: 0;
+	 transition: 0.3s;
+}
+ .nav-item:not(.is-active):hover:before {
+	 opacity: 1;
+	 bottom: 0;
+}
+ .nav-item:not(.is-active):hover {
+	 color: #333;
+}
+ .nav-indicator {
+	 position: absolute;
+	 left: 0;
+	 bottom: 0;
+	 height: 984px;
+	 transition: 0.4s;
+	 height: 5px;
+	 z-index: 1;
+	 border-radius: 8px 8px 0 0;
+}
+ @media (max-width: 580px) {
+	 .nav {
+		 overflow: auto;
+	}
+}
+ </style>
+ </head>
+ <body>
+     <nav class="nav">
+  <a href="index.html" class="nav-item is-active" active-color="orange">首页</a>
+  <a href="login.html" class="nav-item" active-color="green">注册</a>
+  <a href="zhengzhou.html" class="nav-item" active-color="blue">郑州及其周边</a>
+  <a href="food.html" class="nav-item" active-color="red">郑州美食</a>
+  <a href="feedback.html" class="nav-item" active-color="rebeccapurple">网站反馈</a>
+  <a href="person.html" class="nav-item" active-color="rebeccapurple"> 关于我</a>
+  <span class="nav-indicator"></span>
+</nav>
+<section class="testimonials">
+        <div class="container">
+            <br><br><br>
+            <div class="col-sm-12">
+                <div id="customers-testimonials" class="owl-carousel">
+                    <div class="item">
+                        <div class="shadow-effect">
+							<a href="https://baike.baidu.com/item/%E8%83%A1%E8%BE%A3%E6%B1%A4/3105">
+                            <img src="images/hlt.jpg" class="img-circle" alt="胡辣汤">
+							</a>
+                            <p>
+                               一碗正宗的胡辣汤，需要用熬足十余小时的羊骨汤做汤底，精选胡椒等十余种香料做调，
+                               将卤好的牛肉或者羊肉切厚片入锅，筋道香软的面筋皮浸入了汤底的醇香。正如名扬海外的少林武术，一碗美味的胡辣汤，每一个步都是真功夫的展现。
+                            </p>
+                        </div>
+                        <div class="testimonial-name">
+                            READ MORE
+                        </div>
+                    </div>
+                    
+                   <div class="item">
+                        <div class="shadow-effect">
+							<a href="https://baike.baidu.com/item/%E8%80%81%E8%94%A1%E8%AE%B0%E8%92%B8%E9%A5%BA">
+                            <img src="images/zj.jpg" class="img-circle" alt="">
+							</a>
+                            <p>
+老蔡记蒸饺和葛记焖饼早在清朝年间就扎根于郑州这片土地上，蒸饺每笼均为松针铺底，使得饱满鲜香，汤汁充足的蒸饺有自然的味道，葛记焖饼则是将饼丝入卤，五花肉烹制入口即化，方可上桌。此二种美食可并成为双骄，如同拥有历史感的郑州二七双子塔，对称和谐，相互交融，傲立于城市之中
+                            </p>
+                        </div>
+                        <div class="testimonial-name">
+                            READ MORE
+                        </div>
+                    </div>
+                    
+                    
+                     <div class="item">
+                        <div class="shadow-effect">
+							<a href="https://baike.baidu.com/item/%E7%83%A9%E9%9D%A2/637578?fr=aladdin">
+                            <img src="images/hm.jpg" class="img-circle" alt="烩面">
+							</a>
+                            <p>
+                               来到郑州，第一餐必吃烩面，第一个推荐的去处便是河南省博物院。吃一碗面补补精神，再去千年的历史的长河中游览一番。一碗烩面，面条筋道爽弹，羊肉汤汤汁浓厚鲜醇，加以脆嫩的鲜木耳、香甜的枸杞、金黄色的豆丝、鲜卤鹌鹑蛋、筋道的红薯粉丝，营养均衡又美味。长长的烩面，如同长长的历史，代代流传。  </p>
+                        </div>
+                        <div class="testimonial-name">
+                            READ MORE
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="item">
+                        <div class="shadow-effect">
+							<a href="https://baike.baidu.com/item/%E9%BB%84%E6%B2%B3%E5%A4%A7%E9%B2%A4%E9%B1%BC/2891337?fr=aladdin">
+                            <img src="images/hhly.jpg" class="img-circle" alt="">
+							</a>
+                            <p>
+                                   黄河，中国的母亲河，追根溯源，华夏文明的发源地，承载了五千年的发展历史屹立在黄河岸边的炎黄二帝像，凝视着滚滚的黄河之水每日奔腾不息，仿佛是注视着华夏文明源远流长。在黄河中生长的黄河大鲤鱼，捕捞后趁新鲜处理，红烧之后肉质紧实鲜嫩，美味悠长。     </p>
+                        </div>
+                        <div class="testimonial-name">
+                            READ MORE
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="item">
+                        <div class="shadow-effect">
+							<a href="https://baike.baidu.com/item/%E9%BE%99%E9%A1%BB%E9%85%A5/10135569">
+                            <img src="images/lxs.png" class="img-circle" alt="">
+							</a>
+                            <p>
+                                   传统特色糕点。哪吒闹海的神话故事，在中国家喻户晓。小哪吒骑在老龙王的背上，剥了它的皮，抽了它的筋，最后把龙须也割了，交给厨师，做成食品，分给百姓们吃了。这食品，就是流传至今的龙须糕。
+                                   龙须糕是郑州一道历史悠久的小吃，因糕点表面呈须状，故名龙须糕。是以米、面粉、糖、油作为主料，并佐以姜、虾、盐、肉、蛋松等混合制成。具有色泽美观，甜咸适口，风味独特等特点。   </p>
+                        </div>
+                        <div class="testimonial-name">
+                            READ MORE
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="js/美食.js">
+   
+    </script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js"></script>
+	    <script>
+	    
+	    jQuery(document).ready(function($) {
+	            "use strict";
+	            //  TESTIMONIALS CAROUSEL HOOK
+	            $('#customers-testimonials').owlCarousel({
+	                loop: true,
+	                center: true,
+	                items: 3,
+	                margin: 0,
+	                autoplay: true,
+	                dots:true,
+	                autoplayTimeout: 8500,
+	                smartSpeed: 450,
+	                responsive: {
+	                  0: {
+	                    items: 1
+	                  },
+	                  768: {
+	                    items: 2
+	                  },
+	                  1170: {
+	                    items: 3
+	                  }
+	                }
+	            });
+	          });
+	    
+	    
+	    </script>
+ </body>
+ </html>

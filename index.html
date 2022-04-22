@@ -1,0 +1,636 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+	 <meta name="viewport"content="width=device-width,initial-scale=1.0">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>郑州旅游网</title>
+     <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet"> -->
+     <style>
+     
+      
+ * {
+	 
+	 box-sizing: border-box;
+}
+ .body {
+	 text-align: center;
+	 display: flex;
+	 height:58px;
+	 width: 421%;
+	 justify-content: center;
+	 align-items: center;
+	 padding: 10 32px;
+	 background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/debut_light.png");
+}
+ .nav {
+	 display: inline-flex;
+	 position: relative;
+	 left:355px;
+	 hight:20px;
+	 overflow: hidden;
+	 max-width: 100%;
+	 background-color: #fff;
+	 padding: 0 20px;
+	 border-radius: 40px;
+	 box-shadow: 0 10px 40px rgba(159, 162, 177, .8);
+}
+ .nav-item {
+	 left:0px;
+	 color: #83818c;
+	 padding: 16px;
+	 text-decoration: none;
+	 transition: 0.3s;
+	 margin: 0 20px;
+	 z-index:6;
+	 font-family: 'Roboto Condensed', sans-serif;
+	 font-weight: 450;
+	 position: relative;
+}
+ .nav-item:before {
+	 content: "";
+	 position: relative;
+	 bottom: 28px;
+	 left: 900px;
+	 width: 30%;
+	 height: 50px;
+	 background-color: #dfe2ea;
+	 border-radius: 8px 8px 0 0;
+	 opacity: 0;
+	 transition: 0.3s;
+}
+ .nav-item:not(.is-active):hover:before {
+	 opacity: 1;
+	 bottom: 0;
+}
+ .nav-item:not(.is-active):hover {
+	 color: #333;
+}
+ .nav-indicator {
+	 position: absolute;
+	 left: 0;
+	 bottom: 0;
+	 height: 984px;
+	 transition: 0.4s;
+	 height: 5px;
+	 z-index: 1;
+	 border-radius: 8px 8px 0 0;
+}
+ @media (max-width: 580px) {
+	 .nav {
+		 overflow: auto;
+	}
+}
+  .container{
+             display: flex;
+             width: 100%;
+             padding: 4% 2%;
+             box-sizing: border-box;
+             height: 100vh;
+			 position:relative;
+			 left:0px;
+			 top:0px;
+         }
+         .box{
+             flex: 1;
+             overflow: hidden;
+             transition: 0.5s;
+             margin: 0 2%;
+             box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+             line-height: 0;
+         }
+     
+         .box > img{
+             width: 200%;
+             height: calc(100% - 10vh);
+             object-fit: cover;
+             transition: 0.5s;
+         }
+     
+         .box > span{
+             font-size: 3vh;
+             display: block;
+             text-align: center;
+             height: 10vh;
+             line-height: 2.5;
+             font-family: tahoma;
+             color: #333;
+             text-transform: uppercase;
+         }
+         
+         
+         .box:hover{
+             flex: 1 1 50%;
+         }
+         
+         .box:hover > img{
+             width: 100%;
+             height: 100%;
+         }
+		.blog-posts{
+		  width: min(1200px, 100%);
+		  padding: 20px;
+		  display: flex;
+		  justify-content: space-between;
+		  flex-wrap: wrap;
+		  cursor: pointer;
+	      position:relative;
+		  left:170px;
+		}
+		.post{
+		  width: calc(33% - 10px);
+		  overflow: hidden;
+		}
+		.post-img{
+		  width: 100%;
+		  border-radius: 6px;
+		  transition: .3s linear;
+		}
+		.post-content{
+		  background-color: #ffffffdd;
+		  margin: 0 20px;
+		  padding: 30px;
+		  border-radius: 6px;
+		  transform: translateY(-60px);
+		  transition: .3s linear;
+		}
+		.post-content h3{
+		  font-size: 16px;
+		  margin-bottom: 10px;
+		}
+		.date{
+		  font-size: 15px;
+		  font-style: italic;
+		  color: #e77f67;
+		}
+		.post:hover .post-img{
+		  transform: translateY(20px);
+		}
+		.post:hover .post-content{
+		  transform: translateY(-80px);
+		}
+		@media screen and (max-width: 1200px){
+		  .blog-posts{
+		    justify-content: center;
+		  }
+		  .post{
+		    width: min(600px, 100%);
+		  }
+		}
+		.story{
+			position:absolue;
+	        text-align: center;
+		}
+		.legend{
+			font-size: 50px;
+			font-style: italic;
+			}
+         .body2 {
+           background: #dce1df;
+           color: #4f585e;
+           font-family: 'Source Sans Pro', sans-serif;
+           text-rendering: optimizeLegibility;
+         }
+         a.btn {
+           background: #0096a0;
+           border-radius: 4px;
+           box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
+           color: #ffffff;
+           display: inline-block;
+           padding: 6px 30px 8px;
+           position: relative;
+           text-decoration: none;
+           transition: all 0.1s 0s ease-out;
+         }
+         .no-touch a.btn:hover {
+           background: #00a2ad;
+           box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
+           transform: translateY(-2px);
+           transition: all 0.25s 0s ease-out;
+         }
+         .no-touch a.btn:active,
+         a.btn:active {
+           background: #008a93;
+           box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.25);
+           transform: translate3d(0, 1px, 0);
+           transition: all 0.025s 0s ease-out;
+         }
+         div.cards {
+           margin:6px auto;
+           max-width: 960px;
+           text-align: center;
+         }
+         div.card {
+           background: #ffffff;
+           display: inline-block;
+           margin: 8px;
+           max-width: 300px;
+           perspective: 1000;
+           position: relative;
+           text-align: left;
+           transition: all 0.3s 0s ease-in;
+           z-index: 1;
+         }
+         div.card img {
+           max-width: 300px;
+         }
+         div.card div.card-title {
+           background: #ffffff;
+           padding: 6px 15px 10px;
+           position: relative;
+           z-index: 0;
+         }
+         div.card div.card-title a.toggle-info {
+           border-radius: 32px;
+           height: 32px;
+           padding: 0;
+           position: absolute;
+           right: 15px;
+           top: 10px;
+           width: 32px;
+         }
+         div.card div.card-title a.toggle-info span {
+           background: #ffffff;
+           display: block;
+           height: 2px;
+           position: absolute;
+           top: 16px;
+           transition: all 0.15s 0s ease-out;
+           width: 12px;
+         }
+         div.card div.card-title a.toggle-info span.left {
+           right: 14px;
+           transform: rotate(45deg);
+         }
+         div.card div.card-title a.toggle-info span.right {
+           left: 14px;
+           transform: rotate(-45deg);
+         }
+         div.card div.card-title h2 {
+           font-size: 24px;
+           font-weight: 700;
+           letter-spacing: -0.05em;
+           margin: 0;
+           padding: 0;
+         }
+         div.card div.card-title h2 small {
+           display: block;
+           font-size: 18px;
+           font-weight: 600;
+           letter-spacing: -0.025em;
+         }
+         div.card div.card-description {
+           padding: 0 15px 10px;
+           position: relative;
+           font-size: 14px;
+         }
+         div.card div.card-actions {
+           box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
+           padding: 10px 15px 20px;
+           text-align: center;
+         }
+         div.card div.card-flap {
+           background: #d9d9d9;
+           position: absolute;
+           width: 100%;
+           transform-origin: top;
+           transform: rotateX(-90deg);
+         }
+         div.card div.flap1 {
+           transition: all 0.3s 0.3s ease-out;
+           z-index: -1;
+         }
+         div.card div.flap2 {
+           transition: all 0.3s 0s ease-out;
+           z-index: -2;
+         }
+         div.cards.showing div.card {
+           cursor: pointer;
+           opacity: 0.6;
+           transform: scale(0.88);
+         }
+         .no-touch div.cards.showing div.card:hover {
+           opacity: 0.94;
+           transform: scale(0.92);
+         }
+         div.card.show {
+           opacity: 1 !important;
+           transform: scale(1) !important;
+         }
+         div.card.show div.card-title a.toggle-info {
+           background: #ff6666 !important;
+         }
+         div.card.show div.card-title a.toggle-info span {
+           top: 15px;
+         }
+         div.card.show div.card-title a.toggle-info span.left {
+           right: 10px;
+         }
+         div.card.show div.card-title a.toggle-info span.right {
+           left: 10px;
+         }
+         div.card.show div.card-flap {
+           background: #ffffff;
+           transform: rotateX(0deg);
+         }
+         div.card.show div.flap1 {
+           transition: all 0.3s 0s ease-out;
+         }
+         div.card.show div.flap2 {
+           transition: all 0.3s 0.2s ease-out;
+         }
+         .wendu{
+			 position:relative;
+			 left:center;
+			 top:-20px;
+			 }
+     </style>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+	 </script>
+ </head>
+ <body>
+     <nav class="nav">
+  <a href="index.html" class="nav-item is-active" active-color="orange">首页</a>
+  <a href="login.html" class="nav-item" active-color="green">注册</a>
+  <a href="zhengzhou.html" class="nav-item" active-color="blue">郑州及其周边</a>
+  <a href="food.html" class="nav-item" active-color="red">郑州美食</a>
+  <a href="feedback.html" class="nav-item" active-color="rebeccapurple">网站反馈</a>
+  <a href="person.html" class="nav-item" active-color="rebeccapurple"> 关于我</a>
+  <span class="nav-indicator"></span>
+</nav>
+ <div class="container">
+        <div class="box">
+			<a href="https://baike.baidu.com/item/%E7%BB%BF%E5%9C%B0%E4%B8%AD%E5%BF%83%C2%B7%E5%8D%83%E7%8E%BA%E5%B9%BF%E5%9C%BA">
+            <img src="images/sjzg1.jpg" alt="">
+			</a>
+            <span>绿地中心-千玺广场</span>
+        </div>
+        
+        <div class="box">
+			<a href="https://baike.baidu.com/item/%E4%BA%8C%E4%B8%83%E7%BA%AA%E5%BF%B5%E5%A1%94?fromtitle=%E4%BA%8C%E4%B8%83%E5%A1%94&fromid=1255112">
+            <img src="images/sjzg2.jpg" alt=""></a>
+            <span>二七夜景</span>
+        </div>
+        
+        
+         <div class="box">
+			 <a href="https://baike.baidu.com/item/%E7%BB%BF%E5%9C%B0%E5%8F%8C%E5%AD%90%E5%A1%94">
+            <img src="images/sjzg3.jpg"alt="">
+			</a>
+            <span>郑州双子塔</span>
+        </div>
+        
+         
+         <div class="box">
+			 <a href="https://baike.baidu.com/item/%E9%83%91%E5%B7%9E%E5%A5%A5%E6%9E%97%E5%8C%B9%E5%85%8B%E4%BD%93%E8%82%B2%E4%B8%AD%E5%BF%83">
+            <img src="images/sjzg4.jpg" alt="">
+			</a>
+            <span>郑州奥林匹克中心</span>
+        </div>
+         <div class="box">
+			 <a herf="https://baike.baidu.com/item/%E6%96%B0%E9%83%91%E5%B8%82%E9%BB%84%E5%B8%9D%E6%95%85%E9%87%8C%E6%99%AF%E5%8C%BA/24624851?fromtitle=%E9%BB%84%E5%B8%9D%E6%95%85%E9%87%8C&fromid=367195">
+            <img src="images/sjzg5.jpg" alt="">
+			</a>
+            <span>黄帝故里</span>
+        </div>
+    </div>
+	<div class="story">
+		<span class="legend">神话故事</span>
+	<div class="blog-posts">
+	    <div class="post">
+	      <img src="images/liangzhu.png" alt="" class="post-img">
+	      <div class="post-content">
+	        <h3>祝英台女扮男装进学堂读书，梁祝二人日久生情，私定终身，祝父嫌梁山伯太贫寒，把女儿嫁给马家，梁山伯积郁成疾，终不治身亡。结婚之日，祝英台要求花轿经过梁山伯的墓前，并且拜祭，然后在墓碑上碰死了，最后两人的魂魄化为蝴蝶，比翼双飞</h3>
+	        <span class="date">汝南 马乡</span>
+	      </div>
+	    </div>
+	    <div class="post">
+	      <img src="images/mulan.jpg" alt="" class="post-img">
+	      <div class="post-content">
+	        <h3>北魏太武帝年间，花木兰替父从军，参加了北魏破柔然之战，木兰多次参与了北魏出击大漠兵伐柔然的战争，且表现突出，但却无人发现她是女子。战争结束后，朝廷欲授予她尚书郎，被她婉言谢绝。</h3>
+	        <span class="date">商丘 虞城</span>
+	      </div>
+	    </div>
+	    <div class="post">
+	      <img src="images/pangu.png" alt="" class="post-img">
+	      <div class="post-content">
+	        <h3>天地浑沌如鸡子，盘古生其中。万八千岁，天地开辟，阳清为天，阴浊为地。盘古在其中，一日九变，神于天，圣于地。天日高一丈，地日厚一丈，盘古日长一丈，如此万八千岁。天数极高，地数极深，盘古极长，后乃有三皇。数起于一，立于三，成于五，盛于七，处于九，故天去地九万里。</h3>
+	        <span class="date">泌阳 桐柏</span>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+		
+ <div class="cards">
+	 <div class="wendu">
+	 <span class="legend">郑州四季</span></div>
+          <div class="card">
+              <img class="card-image" src="images/spring.png" alt="">
+              <div class="card-title">
+                  <a href="" class="toggle-info btn">
+                      <span class="left"></span>
+                      <span class="right"></span>
+                  </a>
+                  <h2>
+                   春季 
+                  <small>江汉春风起，冰霜昨夜除</small>
+                  </h2>
+              </div>
+              
+              <div class="card-flap flap1">
+                  <div class="card-description">
+                      郑州原本光秃秃的行道树一夜之间悄然披上绿装；城市人脱下了厚重的棉衣，心情也变得喜悦起来；还有宅了一个冬天的人们，陆续走出家门体验一场说走就走的春游
+                  </div>
+                  <div class="card-flap flap2">
+                      <div class="card-actions">
+                          <a href="" class="btn">READ MORE</a>
+                      </div>
+                  </div>
+              </div>          
+          </div>
+          
+          
+          
+           <div class="card">
+              <img class="card-image" src="images/summer.png" alt="">
+              <div class="card-title">
+                  <a href="" class="toggle-info btn">
+                      <span class="left"></span>
+                      <span class="right"></span>
+                  </a>
+                  <h2>
+                   夏季
+                  <small>芳菲歇去何须恨，夏木陰陰正可人</small>
+                  </h2>
+              </div>
+              
+              <div class="card-flap flap1">
+                  <div class="card-description">
+                      郑州的夏是四季中最鼎盛的时期，他热情奔放，轰轰冽冽，显示着生命的力量与魅力。即使在即将逝去的那一瞬，夏也要掷出平生最浓烈，最朴素的颜色，每一滴绿色都掺透和生命的精华。
+
+                  </div>
+                  <div class="card-flap flap2">
+                      <div class="card-actions">
+                          <a href="" class="btn">READ MORE</a>
+                      </div>
+                  </div>
+              </div>          
+          </div>
+          
+          <div class="body2">
+           <div class="card">
+              <img class="card-image" src="images/autumn.png" alt="">
+              <div class="card-title">
+                  <a href="" class="toggle-info btn">
+                      <span class="left"></span>
+                      <span class="right"></span>
+                  </a>
+                  <h2>
+                   秋季 
+                  <small>自古逢秋悲寂寥，我言春日胜春朝</small>
+                  </h2>
+              </div>
+              
+              <div class="card-flap flap1">
+                  <div class="card-description">
+                      行走在郑州初秋微凉的风里，树影婆娑，淡淡的阳光光影斑驳，从古樟树林中投下，给这个世界带来温暖和光明。白露为霜的秋夜，一轮凉月被你望瘦，轻轻拾起那朵碎裂的深情，掌心里的香气，一丝丝一缕缕，认真嗅进心里。
+                  </div>
+                  <div class="card-flap flap2">
+                      <div class="card-actions">
+                          <a href="" class="btn">READ MORE</a>
+                      </div>
+                  </div>
+              </div>          
+          </div>
+          
+           <div class="card">
+              <img class="card-image" src="images/winter.png" alt="">
+              <div class="card-title">
+                  <a href="" class="toggle-info btn">
+                      <span class="left"></span>
+                      <span class="right"></span>
+                  </a>
+                  <h2>
+                   冬季 
+                  <small>晚来天欲雪，能饮一杯无</small>
+                  </h2>
+              </div>
+              
+              <div class="card-flap flap1">
+                  <div class="card-description">
+                      郑州冬天的美是需要我们慢慢去体验和领会的，雪后，那绵绵的白雪装饰着世界，琼枝玉叶，粉装玉砌，皓然一色，真是一派瑞雪丰年的喜人景象。骤雪初霁，冬日里的太阳似乎拉近了与人的距离，显得格外地清晰，格外地耀眼。但阳光的温度却好像被冰雪冷却过似的，怎么也热不起来了
+                  </div>
+                  <div class="card-flap flap2">
+                      <div class="card-actions">
+                          <a href="" class="btn">READ MORE</a>
+                      </div>
+                  </div>
+              </div>          
+          </div>
+          
+           <div class="card">
+              <img class="card-image" src="images/wu.jpg" alt="">
+              <div class="card-title">
+                  <a href="" class="toggle-info btn">
+                      <span class="left"></span>
+                      <span class="right"></span>
+                  </a>
+                  <h2>
+                   雾天 
+                  <small>东风袅袅泛崇光，香雾空蒙月转廊</small>
+                  </h2>
+              </div>
+              
+              <div class="card-flap flap1">
+                  <div class="card-description">
+                      悄无声息的晓雾，拉不开。扯不碎，一切景物都迷迷茫茫，似真似假。清晨的雾，感觉近在咫尺，总让我有一种伸手触摸一把的冲动.如真这么做了，却又只是徒劳.人行走在雾色当中，远外朦胧得看不着方向.天，灰沉沉的似与地之间更为之亲密无间起来。
+                  </div>
+                  <div class="card-flap flap2">
+                      <div class="card-actions">
+                          <a href="" class="btn">READ MORE</a>
+                      </div>
+                  </div>
+              </div>          
+          </div>
+          
+           <div class="card">
+              <img class="card-image" src="images/yu.png" alt="">
+              <div class="card-title">
+                  <a href="" class="toggle-info btn">
+                      <span class="left"></span>
+                      <span class="right"></span>
+                  </a>
+                  <h2>
+                   雨天 
+                  <small>卧迟灯灭后，睡美雨声中</small>
+                  </h2>
+              </div>
+              
+              <div class="card-flap flap1">
+                  <div class="card-description">
+                      有你的城市，下雨也美丽。下雨天，细密的雨丝飘飘洒洒地落到蒲公英的花瓣上，微微向下倾斜的花瓣更显出优雅的神态；洋洋洒洒的雨丝在落到花瓣上的那一刹那，一瞬间化作一个个轻柔的足尖，点在上面，漫步着、蹦跳着、旋转着、飞舞着，舞动出一篇篇的华美乐章。
+
+                  </div>
+                  <div class="card-flap flap2">
+                      <div class="card-actions">
+                          <a href="" class="btn">READ MORE</a>
+                      </div>
+                  </div>
+              </div>          
+          </div>
+     </div>
+      </div>
+      <script>
+      
+      $(document).ready(function(){
+   var zindex = 10;
+   
+   $("div.card").click(function(e){
+     e.preventDefault();
+ 
+     var isShowing = false;
+ 
+     if ($(this).hasClass("show")) {
+       isShowing = true
+     }
+ 
+     if ($("div.cards").hasClass("showing")) {
+       // a card is already in view
+       $("div.card.show")
+         .removeClass("show");
+ 
+       if (isShowing) {
+         // this card was showing - reset the grid
+         $("div.cards")
+           .removeClass("showing");
+       } else {
+         // this card isn't showing - get in with it
+         $(this)
+           .css({zIndex: zindex})
+           .addClass("show");
+ 
+       }
+ 
+       zindex++;
+ 
+     } else {
+       // no cards in view
+       $("div.cards")
+         .addClass("showing");
+       $(this)
+         .css({zIndex:zindex})
+         .addClass("show");
+ 
+       zindex++;
+     }
+     
+   });
+ });
+      
+      
+      </script>
+<script src="js/snake.js"> 
+   
+    </script>
+ </body>
+ </html>

@@ -1,0 +1,166 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0;}
+body{
+		background-image:url(images/背景1.jpg);
+		background-attachment:fixed;	
+	}
+
+.logo1{
+	position:relative;
+	left:0px;
+	top:0px;
+}
+ .wrap{ position:fixed;top:0px;left:0px;
+        width:100%; height:10px; 
+        margin:0 auto; 
+		/*background-image:url(../images/second.jpg);*/ 
+		border:0;
+		 }
+ 
+ .header{ width:100%; height:80px; 
+          float:left;
+		  box-shadow:0px 1px 20px 2px;
+		
+		  }
+          
+.logo{ width:150px; height:39px; 
+       font-family:"香蕉牛奶"; 
+	   font-weight:bold; 
+	   font-size:38px; 
+	   text-align:left; 
+	   float:left; margin-right:50px;
+	     }
+
+     .menu-top{ width:1250px; height:480px; 
+	         font-family:"微软雅黑", "宋体", "楷体", "黑体"; 
+			 text-align:center; 
+			 margin:0 auto; 
+			 float:inherit right;
+	       }
+	  
+	  .menu ul{background-color:#FFF; 
+	           width:1250px; height:auto; 
+			   position:relative; 
+			   list-style:none;
+			       }
+      
+	  .menu ul li{  width:250px; height:40px; 
+	                line-height:60px; 
+					text-align:center; 
+					position:relative; float:left;
+					font-family:"宋体", "楷体", "黑体";
+	                font-size:26px; 				 
+					            }
+      
+	  .menu li a:link{ background-color:rgba(0,0,0,0);/*导航栏背景颜色*/
+	                   color:#000; 
+					   display:block; 
+					   width:250px; height:70px; 
+					   text-decoration:none;
+					   border-bottom:#FC3;
+					                     }
+     
+	  .menu li a:hover{text-decoration:none;	              
+	                   color:#fc3;
+					   border-bottom: 3px solid #ff9d00;
+	                   /*鼠标俘动到盒子时，夫盒子与子盒子的背景颜色*/
+	                   /*鼠标放到盒子上面时，子列表字体颜色*/
+					               }
+      .menu li ul {width:250px; 
+	              position:absolute; left:0px; top:40px;   
+				  display:none; 
+				                      }
+     
+	 .menu li:hover ul{ display:block;
+	                     position:relative; left:0px; top:0px; 
+						 color:#FC3;
+						      }
+.login{position:absolute;
+left:900px;
+top:20px;
+}
+.表单{position:absolute;
+left:1600px;
+top:30px;
+}
+.title hover{
+	color:#FC6;
+}
+.title{
+	width:480px;
+	margin-bottom: 15px;
+	font-size: 28px;
+	color: #F00;
+}
+.郑州{
+	background:url(images/11.jpg);
+    
+	font-size:28px;
+	height:440px;
+	width:100%;
+	padding:90px;
+	margin:30px;
+}
+.登封{background:url(images/3.jpg);
+    background-repeat:no-repeat;
+	background-size:contain;
+	font-size:28px;
+	background-position:650px 80px;
+	height:440px;
+	width:100%;
+	padding:90px;
+	margin:30px;
+}
+.新密{background:url(images/新密背景.jpg);
+    background-repeat:no-repeat;
+	background-size:contain;
+	font-size:28px;
+	background-position:650px 80px;
+	height:440px;
+	width:100%;
+	padding:90px;
+	margin:30px;
+}
+.新郑{background:url(images/新郑背景.jpg);
+    background-repeat:no-repeat;
+	background-size:contain;
+	font-size:28px;
+	background-position:650px 80px;
+	height:440px;
+	width:100%;
+	padding:90px;
+	margin:30px;
+}
+.文章{
+	width:1000px;
+	height:440px;
+	position:absolute;
+	left:680px;
+	top:220px;
+}
+.文章1{
+	width:1000px;
+	height:440px;
+	position:absolute;
+	left:680px;
+	top:880px;
+	color:#FC0;
+}
+.文章2{
+	width:1000px;
+	height:440px;
+	position:absolute;
+	left:780px;
+	top:1560px;
+	color:#FC0;
+}
+.文章3{
+	width:1000px;
+	height:440px;
+	position:absolute;
+	left:780px;
+	top:2260px;
+	color:#F00;
+}
+

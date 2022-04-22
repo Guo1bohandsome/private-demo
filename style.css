@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  place-items: left;
+  text-align: center;
+  background: #f2f2f2;
+}
+.container{
+  position: relative;
+  height: 500px;
+  width: 400px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.3);
+  transition: 0.3s ease-out;
+}
+.container:hover{
+  box-shadow: 0px 1px 35px 0px rgba(0,0,0,0.3);
+}
+.container .image{
+	background: #000;
+	position: absolute;
+	top: 0;
+	left: 1px;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	transition: transform 0.3s ease-out;
+}
+.container:hover .image{
+  transform: translateY(-100px);
+}
+.image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease-out;
+}
+.container:hover .image img{
+  opacity: 0.7;
+}
+.container:hover .image{
+ transform: translateY(-100px);
+}
+.container ul{
+	display: flex;
+	position: absolute;
+	top: 334px;
+	left: 164px;
+	transform: translate(-50%, -50%);
+	z-index: 3;
+	list-style: none;
+}
+ul li{
+  margin: 0 5px;
+}
+ul li a{
+  display: block;
+  height: 50px;
+  width: 50px;
+  color: #000;
+  line-height: 50px;
+  font-size: 20px;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translateY(200px);
+  background: #fff;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+.container:hover > ul > li > a{
+  opacity: 1;
+  transform: translateY(0);
+}
+.container:hover > ul > li:nth-child(2) a{
+  transition-delay: 0.1s;
+}
+.container:hover > ul > li:nth-child(3) a{
+  transition-delay: 0.2s;
+}
+.container:hover > ul > li:nth-child(4) a{
+  transition-delay: 0.3s;
+}
+.container:hover > ul > li:nth-child(5) a{
+  transition-delay: 0.4s;
+}
+.container .content{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.info{
+	position: absolute;
+	bottom: 8px;
+	text-align: center;
+	width: 100%;
+	color: #000;
+	line-height: 26px;
+	left: 1px;
+}
+.info h2{
+  font-size: 27px;
+  margin: 3px 0;
+}
+.info span{
+  color: #1a1a1a;
+}.header{
+	width:100%;
+	height:80px;
+}
+.title{
+	width:77%;
+	height: 120px;
+	position: absolute;
+	left: 410px;
+	top: 35px;
+	background:url(images/lxy.gif);
+	background-repeat:no-repeat;
+	background-size:1800px 500px;
+	font-size:36px;
+	text-align:center;
+	line-height:150px;
+	color:#000000;
+}
+body{background:url(images/背景1.jpg);
+	     background-repeat:repeat;
+		 }
+
+.pic{position:absolute;
+     width:400px;
+	 height:380px;
+	 left:80px;
+	 top:300px;}
+	 .zzjj{width:1100px;
+      height:400px;
+	  margin:-372px 50px;
+	  /*background:#CC6;*/
+	  float:right;}
+.zzjj .biaoti{ width:100px;
+                 height:130px;
+				 border-bottom:2px solid #FFF;}
+.zzjj h4{ width:660px;
+          color:#F9F;
+		  float:left;
+		  padding-left:4px;}
+.zzjj span{display:block;
+           float:right;
+		   padding-right:400px;
+		   color:#CCC;
+           }
+.dl span{float:right;
+	color:#F93;
+    margin:10px 0;
+	font-size:28px;
+	position:relative;
+	right:-212px;
+	top:-60px;}
+
+
+
+/*网页尾部*/
+#footer{width:100%;
+        height:6px;
+		background:#333;
+		padding:40px;
+		position:absolute;
+		top:1500px;
+		overflow:hidden;
+		margin:10px 0;
+		
+		}
+.by{ margin:-15px auto;
+	color:#fff;
+	text-align: center;
+	bottom:0px;}
+.bo{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+  background: #f1f1f1;
+  display: flex;
+  height: 0vh;
+  align-items: right;
+  justify-content: center;
+  position: relative;
+  top:-270px;
+  left:30x;
+}
+.share-button{
+  width: 280px;
+  height: 80px;
+  background: #dfe6e9;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  left:580px;
+  cursor: pointer;
+  transition: .3s linear;
+}
+.share-button:hover{
+  transform: scale(1.1);
+}
+.share-button span{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #2d3436;
+  color: #f1f1f1;
+  text-align: center;
+  line-height: 80px;
+  z-index: 999;
+  transition: .6s linear;
+  border-radius: 40px;
+}
+.share-button:hover span{
+  transform: translateX(-100%);
+  transition-delay: .3s;
+}
+.share-button a{
+  flex: 1;
+  font-size: 26px;
+  color: #2d3436;
+  text-align: center;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: 0.3s linear;
+}
+.share-button:hover a{
+  opacity: 1;
+  transform: translateX(0);
+}
+.share-button a:nth-of-type(1){
+  transition-delay: 1s;
+}
+.share-button a:nth-of-type(2){
+  transition-delay: 0.8s;
+}
+.share-button a:nth-of-type(3){
+  transition-delay: 0.6s;
+}
+.share-button a:nth-of-type(4){
+  transition-delay: 0.4s;
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+/* .dy{
+             font-family: tahoma;
+             background: #000;
+             color: #352e2a;
+             background: #000;
+             background-size: cover;
+              background-position: center center; 
+			
+             
+         } */
+     
+.heart-btn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.content{
+  padding: 13px 16px;
+  display: flex;
+  border: 2px solid #eae2e1;
+  border-radius: 5px;
+  cursor: pointer;
+  position:relative;
+  top:-25px;
+  left:580px;
+}
+.content.heart-active{
+  border-color: #f9b9c4;
+  background: #fbd0d8;
+}
+.heart{
+  position: absolute;
+  background: url("https://www.5g-o.com/codedesign/wp-content/uploads/2020/03/img.png") no-repeat;
+  background-position: left;
+  background-size: 2900%;
+  height: 90px;
+  width: 90px;
+  top: 50%;
+  left: 21%;
+  transform: translate(-50%,-50%);
+}
+.text{
+  font-size: 21px;
+  margin-left: 30px;
+  color: grey;
+  font-family: 'Montserrat',sans-serif;
+}
+.numb:before{
+  content: '12';
+  font-size: 21px;
+  margin-left: 7px;
+  font-weight: 600;
+  color: #9C9496;
+  font-family: sans-serif;
+}
+.numb.heart-active:before{
+  content: '13';
+  color: #000;
+}
+.text.heart-active{
+  color: #000;
+}
+.heart.heart-active{
+  animation: animate .8s steps(28) 1;
+  background-position: right;
+}
+@keyframes animate {
+  0%{
+    background-position: left;
+  }
+  100%{
+    background-position: right;
+  }
+}

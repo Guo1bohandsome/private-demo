@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>郑州及其周边</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="A parallax scrolling experiment using jQuery" />
+    <link rel="stylesheet" media="all" href="css/main.css" />
+    <script src="js/modernizr.custom.37797.js"></script> 
+    <!-- Grab Google CDN's jQuery. fall back to local if necessary --> 
+    <script src="https://www.5g-o.com/codedesign/wp-content/uploads/2020/02/jquery.min_.js"></script> 
+    <script>!window.jQuery && document.write('<script src="/js/jquery-1.6.1.min.js"><\/script>')</script>
+    <script src="js/parallax.js"></script>
+  </head>
+  <style>
+  .nav {
+  	 display: inline-flex;
+  	 position: relative;
+  	 left:355px;
+  	 hight:20px;
+  	 overflow: hidden;
+  	 max-width: 100%;
+  	 background-color: #fff;
+  	 padding: 0 20px;
+  	 border-radius: 40px;
+  	 box-shadow: 0 10px 40px rgba(0, 0, 0, .8);
+	
+  }
+   .nav-item {
+  	 left:0px;
+  	 color: #83818c;
+  	 padding: 16px;
+  	 text-decoration: none;
+  	 transition: 0.3s;
+  	 margin: 0 20px;
+  	 z-index:6;
+  	 font-family: 'Roboto Condensed', sans-serif;
+  	 font-weight: 450;
+  	 position: relative;
+  }
+   .nav-item:before {
+  	 content: "";
+  	 position: relative;
+  	 bottom: 28px;
+  	 left: 900px;
+  	 width: 30%;
+  	 height: 50px;
+  	 background-color: #dfe2ea;
+  	 border-radius: 8px 8px 0 0;
+  	 opacity: 0;
+  	 transition: 0.3s;
+  }
+   .nav-item:not(.is-active):hover:before {
+  	 opacity: 1;
+  	 bottom: 0;
+  }
+   .nav-item:not(.is-active):hover {
+  	 color: #333;
+  }
+   .nav-indicator {
+  	 position: absolute;
+  	 left: 0;
+  	 bottom: 0;
+  	 height: 984px;
+  	 transition: 0.4s;
+  	 height: 5px;
+  	 z-index: 1;
+  	 border-radius: 8px 8px 0 0;
+  }
+  
+   @media (max-width: 580px) {
+  	 .nav {
+  		 overflow: auto;
+  	}
+  }</style>
+  <body>
+	  <nav class="nav">
+	    <a href="index.html" class="nav-item is-active" active-color="orange">首页</a>
+	    <a href="login.html" class="nav-item" active-color="green">注册</a>
+	    <a href="zhengzhou.html" class="nav-item" active-color="blue">郑州及其周边</a>
+	    <a href="food.html" class="nav-item" active-color="red">郑州美食</a>
+	    <a href="feedback.html" class="nav-item" active-color="rebeccapurple">网站反馈</a>
+	    <a href="person.html" class="nav-item" active-color="rebeccapurple"> 关于我</a>
+	    <span class="nav-indicator"></span>
+	  </nav>
+    <div id="wrapper">
+      
+      <header id="branding">
+        <h1>这里，梦想起飞的地方！</h1>
+      </header>
+      
+      <nav id="primary">
+        <ul>
+          <li>
+            <h1>登封</h1>
+            <a class="manned-flight" href="#manned-flight">View</a>
+          </li>
+          <li>
+            <h1>新密</h1>
+            <a class="frameless-parachute" href="#frameless-parachute">View</a>
+          </li>
+          <li>
+            <h1>新郑</h1>
+            <a class="english-channel" href="#english-channel">View</a>
+          </li>
+          <li>
+            <h1>郑州</h1>
+            <a class="about" href="#about">View</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <div id="content">
+        <article id="manned-flight">
+          <header>
+            <h1>新密</h1>
+          </header>
+          <p>新密历史悠久，文化灿烂。是华夏文明的重要发祥地之一，公元前206年始置密县，1994年撤县建市。有各级文物保护单位103处，其中国家级9处，古城寨遗址、李家沟遗址分别于2000年、2009年被评为全国十大考古新发现。人文景观主要有黄帝宫、古县衙、超化寺等，被命名为“中国羲皇文化之乡”、“岐黄文化发祥圣地”。自然景观主要有伏羲山、神仙洞、飞龙峡、美玉桃源等，其中伏羲山大峡谷、神仙洞森林公园是国家AAA级景区。</p>
+          <nav class="next-prev">
+            <hr />
+            <a class="next frameless-parachute" href="#frameless-parachute">Next</a>
+          </nav>
+        </article>
+        
+        <article id="frameless-parachute">
+          <header>
+            <h1>登封</h1>
+          </header>
+          <p>少林寺是我国久负盛名的佛教寺院，声誉显赫的禅宗祖庭，少林功夫的发祥地，位于登封市西12公里处的嵩山五乳峰下，是嵩山风景区的主要核心景区之一。 
+少林寺的历史久远，始建于北魏，印度名僧菩提达摩来到少林寺传授禅法。以后，寺院逐渐扩大，僧徒日益增多，少林寺声名大振。达摩被称为中国佛教禅宗的初祖，少林寺称为禅宗的祖庭。禅宗修行的禅法称为“壁观“，就是面对墙壁静坐。
+由于长时间盘膝而坐，极易疲劳，僧人们就习武锻炼，以解除身体的困倦。因此传说少林拳是达摩创造的。少林寺在唐朝初年就扬名海内。</p>
+          <nav class="next-prev">
+            <a class="prev manned-flight" href="#manned-flight">Prev</a>
+            <hr />
+            <a class="next english-channel" href="#english-channel">Next</a>
+          </nav>
+        </article>
+        
+        <article id="english-channel">
+          <header>
+            <h1>新郑</h1>
+          </header>
+          <p>新郑历史悠久，上古称为“有熊”，轩辕黄帝出生并建都于此。
+			  黄帝故里拜祖大典是全球华人寻根拜祖圣地、中华民族共有精神家园。帝喾时代，新郑为祝融氏之国。新郑又名祝融之墟，也称有熊之墟，为楚国先民的最早起源地。西周时期，新郑为郐国。公元前770年，郑国将国都从咸林迁到今新郑溱洧水间，仍为郑，历395年，称郑。战国时期韩国迁都新郑，将郑县改为新郑县，从此沿用千年不改。</p>
+          <nav class="next-prev">
+            <a class="prev frameless-parachute" href="#frameless-parachute">Prev</a>
+            <hr />
+            <a class="next about" href="#about">Next</a>
+          </nav>
+        </article>
+        
+        <article id="about">
+          <header>
+            <h1>郑州</h1>
+          </header>
+          <p>郑州，不仅是中国的十字路口，也开始成为世界的路口。3600年前，商汤在这里建成了世界上最大的城市；建国后，这里一年建成一座纺织厂；每5分钟，就有一辆火车从这里经过；这里的胡辣汤店，至少有7000家；每2部苹果手机，就有1部产自这里；
+过去5年，这里净增了185万人，是全省唯一人口在净增的城市。这里是郑州，中国的十字路口。郑州很忙，郑州人很忙。 <a href="index.html">Read about it</a> 郑州</p>
+          <nav class="next-prev">
+            <a class="prev english-channel" href="#english-channel">Prev</a>
+            <hr />
+          </nav>
+        </article>
+      </div>
+      
+      <!-- Parallax foreground -->
+      <div id="parallax-bg3">
+        <img id="bg3-1" src="images/balloon.png" width="529" height="757" alt="Montgolfier hot air balloon"/>
+        <img id="bg3-2" src="images/balloon2.png" width="603" height="583" alt="Frameless parachute"/>
+        <img id="bg3-3" src="images/balloon3.png" width="446" height="713" alt="Blanchard's air balloon"/>
+        <img id="bg3-4" src="images/ground.png" width="1104" height="684" alt="Landscape with trees and cows"/>
+      </div>
+      
+      <!-- Parallax  midground clouds -->
+      <div id="parallax-bg2">
+        <img id="bg2-1" src="images/cloud-lg1.png" alt="cloud"/>
+        <img id="bg2-2" src="images/cloud-lg1.png" alt="cloud"/>
+        <img id="bg2-3" src="images/cloud-lg1.png" alt="cloud"/>
+        <img id="bg2-4" src="images/cloud-lg1.png" alt="cloud"/>
+        <img id="bg2-5" src="images/cloud-lg1.png" alt="cloud"/>
+      </div>
+      
+      <!-- Parallax  background clouds -->
+      <div id="parallax-bg1">
+        <img id="bg1-1" src="images/cloud-lg2.png" alt="cloud"/>
+        <img id="bg1-2" src="images/cloud-lg2.png" alt="cloud"/>
+        <img id="bg1-3" src="images/cloud-lg2.png" alt="cloud"/>
+        <img id="bg1-4" src="images/cloud-lg2.png" alt="cloud"/>
+      </div>
+    
+    </div>
+  
+  </body>
+  
+</html>
